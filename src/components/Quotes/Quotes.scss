@@ -1,0 +1,42 @@
+.quotes-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .quotes-author {
+    width: 600px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #333333;
+    margin-bottom: 140px;
+  }
+  .quotes-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 140px;
+    .quotes-content {
+      position: relative;
+      width: 600px;
+      height: auto;
+      font-family: "Raleway";
+      font-weight: 500;
+      font-size: 36px;
+      // line-height: 120%;
+      color: #000000;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 8px;
+        background-color: #f7df94;
+        left: -100px;
+        top: 0;
+      }
+    }
+  }
+}

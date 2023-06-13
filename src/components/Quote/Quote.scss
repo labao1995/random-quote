@@ -1,0 +1,69 @@
+.quotes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  .quotes-content {
+    position: relative;
+    width: 600px;
+    height: auto;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 36px;
+    // line-height: 120%;
+    color: #000000;
+    &::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 8px;
+      background-color: #f7df94;
+      left: -100px;
+      top: 0;
+    }
+  }
+  .quotes-author {
+    margin-top: 100px;
+    width: 650px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    .quotes-text {
+      padding-left: 0;
+      text-align: left;
+      margin-left: 25px;
+      .author-name {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: #4f4f4f;
+      }
+      .author-title {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        // line-height: 16px;
+        color: #828282;
+      }
+    }
+    &:hover {
+      background-color: #333333;
+      .author-name {
+        color: #f2f2f2;
+      }
+      .author-title {
+        color: #828282;
+      }
+    }
+    span {
+      color: white;
+      margin-right: 25px;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+.App {
+  .header {
+    text-align: right;
+    .header-icon {
+      display: inline-flex;
+      align-items: center;
+      font-family: "Raleway", sans-serif;
+      margin: 25px 25px 25px 0px;
+      cursor: pointer;
+      span {
+        margin-right: 5px;
+      }
+    }
+  }
+}
