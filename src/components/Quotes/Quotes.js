@@ -8,7 +8,7 @@ function Quotes({ quotes, author }) {
                 quotes?.data.data.map((quote, index) => (
                     <div key={index} className="quotes-list-container">
                         <div className='quotes-content'>
-                            {quote.quoteText}
+                            "{quote.quoteText}"
                         </div>
                     </div>
                 ))
